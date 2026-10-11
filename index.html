@@ -1,0 +1,733 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artemon Aerospace â€“ Dominance Doesn't come with Limitations</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- =========================================
+       HEADER
+       ========================================= -->
+  <header class="site-header" id="siteHeader">
+
+    <!-- Thin accent stripe at very top -->
+    <div class="header-stripe"></div>
+
+    <div class="container header-inner">
+
+      <!-- Logo â€” always white version on dark header -->
+      <a href="#home" class="site-logo">
+        <img src="assets/images/logo-white.png"
+             alt="Artemon Aerospace"
+             onerror="this.src='assets/images/logo-light.png'">
+      </a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul class="nav-list" id="navList">
+          <li><a href="#home"    class="nav-a active">HOME</a></li>
+          <li><a href="#"        class="nav-a">CAREER</a></li>
+          <li class="has-drop">
+            <a href="#" class="nav-a drop-trigger">
+              OUR INVENTORY <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="drop-menu">
+              <li><a href="#">TEEVRA MK â€“ I</a></li>
+              <li><a href="#">RUDRA MK-I</a></li>
+              <li><a href="#">SINGLE TUBE PNEUMATIC LAUNCHER</a></li>
+              <li><a href="#">MULTI-BARREL PNEUMATIC LAUNCHER</a></li>
+              <li><a href="#">AAGHAT | 50 KG Electric VTOL UAV</a></li>
+              <li><a href="#">UMRAATS</a></li>
+              <li><a href="#">CCAV â€“ Kamikaze</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact" class="nav-a nav-a--cta">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- =========================================
+       HERO BANNER
+       ========================================= -->
+  <section class="hero" id="home">
+
+    <!-- Background photo + layered cinematic veil -->
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=85&auto=format&fit=crop"
+           alt="" class="hero-bg-img"
+           onerror="this.src='assets/images/hero-bg.jpg'">
+      <div class="hero-veil"></div>
+      <!-- <div class="hero-scanlines" aria-hidden="true"></div> -->
+    </div>
+
+    <!-- Main content row -->
+    <div class="container hero-body">
+      <div class="hero-text">
+
+        <!-- Eyebrow chip â€” defense badge style -->
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-dot"></span>
+          INDIGENOUS DEFENCE INNOVATION
+        </div>
+
+        <h1 class="hero-h1">
+          Next-Generation<br>
+          Unmanned Aerial<br>
+          <em>Systems</em>
+        </h1>
+
+        <p class="hero-desc">
+          Artemon Aerospace engineers advanced unmanned aerial systems built for
+          precision, endurance and operational superiority across defense,
+          security and strategic mission environments.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="hero-cta hero-cta--primary">
+            Get In Touch <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#about" class="hero-cta hero-cta--ghost">
+            Our Platforms
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Drone image â€” right side -->
+      <div class="hero-drone" aria-hidden="true">
+        <img src="assets/images/teevra-drone.png"
+             alt="" onerror="this.style.opacity='0'">
+      </div>
+    </div>
+
+    <!-- Trust stat bar â€” bottom of banner (Swiper on mobile) -->
+    <div class="trust-bar">
+      <div class="container">
+        <div class="swiper trust-swiper">
+          <div class="swiper-wrapper trust-grid">
+
+            <div class="swiper-slide trust-item">
+              <div class="trust-metric">7<span class="trust-sup">+</span></div>
+              <div class="trust-label">UAV Platforms<br>Developed</div>
+            </div>
+
+            <div class="swiper-slide trust-item">
+              <div class="trust-metric">DPIIT</div>
+              <div class="trust-label">Certified MSME<br>Govt. of India</div>
+            </div>
+
+            <div class="swiper-slide trust-item">
+              <div class="trust-metric">iDEX</div>
+              <div class="trust-label">R&amp;D Challenge<br>Winner</div>
+            </div>
+
+            <div class="swiper-slide trust-item">
+              <div class="trust-metric">100<span class="trust-sup">%</span></div>
+              <div class="trust-label">Indigenous<br>Development</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- /hero -->
+
+
+  <!-- =========================================
+       ABOUT SECTION â€” Redesigned
+       ========================================= -->
+  <section class="about" id="about">
+    <div class="container about-wrap">
+
+      <!-- â”€â”€ LEFT: Video column â”€â”€ -->
+      <div class="about-media">
+        <div class="about-video-card">
+
+          <!-- HTML5 video: autoplay + muted + loop -->
+          <video class="about-video"
+                 autoplay muted loop playsinline
+                 poster="assets/images/why-raksha-mantri.jpg">
+            <source src="assets/videos/tube-launcher.mp4" type="video/mp4">
+            <!-- fallback image if video fails -->
+            <img src="assets/images/why-raksha-mantri.jpg" alt="Artemon UAV Demo">
+          </video>
+
+          <!-- Badge overlay â€” bottom of video -->
+          <div class="about-vid-badge">
+            <span class="vid-badge-dot"></span>
+            Indigenous UAV Innovation for India Sovereign
+          </div>
+
+        </div>
+      </div><!-- /about-media -->
+
+
+      <!-- â”€â”€ RIGHT: Content column â”€â”€ -->
+      <div class="about-content">
+
+        <div class="about-label">
+          <i class="fas fa-location-crosshairs"></i>
+          <span>Who We Are</span>
+        </div>
+
+        <h2 class="about-h2">About Artemon</h2>
+
+        <h3 class="about-tagline">Advancing the Future of Unmanned Aerospace Systems</h3>
+
+        <p class="about-body">Artemon Aerospace builds next-generation unmanned aerial systems delivering precision, endurance and operational reliability for defense, security, and strategic missions across complex environments.</p>
+
+        <!-- 3 feature mini-cards in a grid -->
+        <div class="about-cards">
+
+          <div class="about-card">
+            <div class="about-card-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4.5" y="4.5" width="15" height="15" rx="2"/>
+                <path d="M8.5 4.5V3M12 4.5V3M15.5 4.5V3M8.5 21v-1.5M12 21v-1.5M15.5 21v-1.5M4.5 8.5H3M4.5 12H3M4.5 15.5H3M21 8.5h-1.5M21 12h-1.5M21 15.5h-1.5"/>
+                <rect x="8" y="8" width="8" height="8" rx="1"/>
+                <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <h5>Advanced UAV Engineering</h5>
+            <p>Autonomous aerial systems built for modern defense and precision missions.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 3c2.485 0 4.5 4.03 4.5 9s-2.015 9-4.5 9-4.5-4.03-4.5-9 2.015-9 4.5-9z"/>
+                <path d="M3.6 9h16.8M3.6 15h16.8"/>
+              </svg>
+            </div>
+            <h5>Multi-Domain Operations</h5>
+            <p>Air, land, maritime and GNSS-denied environment capability.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.5C12 2.5 4 5.5 4 10.5c0 5 3.5 9 8 11 4.5-2 8-6 8-11 0-5-8-8-8-8z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h5>Indigenous Innovation</h5>
+            <p>100% indigenous development â€” certified DPIIT MSME.</p>
+          </div>
+
+        </div><!-- /about-cards -->
+
+      </div><!-- /about-content -->
+
+    </div><!-- /about-wrap -->
+
+    <!-- â”€â”€ STATS ROW â”€â”€ -->
+    <div class="about-stats-bar">
+      <div class="container about-stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-val">
+            <span class="stat-num" data-target="7">7</span><span class="stat-unit">+</span>
+          </div>
+          <p>Advanced UAV Platforms</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-val stat-text">5-600Kg</div>
+          <p>Operational Weight Range</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-val">
+            <span class="stat-num" data-target="100">100</span><span class="stat-unit">%</span>
+          </div>
+          <p>Indigenous Development</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- /about -->
+
+
+  <!-- =========================================
+       WHY ARTEMON AEROSPACE â€” Redesigned
+       ========================================= -->
+  <section class="why" id="why">
+
+    <!-- â”€â”€ Section header: H2 left | description right â”€â”€ -->
+    <div class="container why-header">
+      <div class="why-header-left">
+        <div class="why-label">
+          <i class="fas fa-location-crosshairs"></i>
+          <span>Why Choose Us</span>
+        </div>
+        <h2 class="why-h2">Why Artemon<br>Aerospace</h2>
+      </div>
+      <div class="why-header-right">
+        <p>Artemon Aerospace develops next-generation unmanned aerial platforms engineered for modern defense and security missions â€” combining advanced autonomy, scalable payloads and robust flight performance.</p>
+      </div>
+    </div>
+
+    <!-- â”€â”€ 4 feature cards in horizontal row â”€â”€ -->
+    <div class="container why-container">
+      <div class="swiper why-swiper">
+        <div class="swiper-wrapper why-cards">
+
+          <div class="swiper-slide why-card">
+            <span class="why-card-num">01</span>
+            <div class="why-card-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <h4>Mission-Focused Engineering</h4>
+            <p>Aerospace-grade materials, optimized aerodynamics and modular architecture delivering durability and adaptability for complex operational scenarios.</p>
+          </div>
+
+          <div class="swiper-slide why-card">
+            <span class="why-card-num">02</span>
+            <div class="why-card-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="8" y="8" width="8" height="8" rx="1"/>
+                <path d="M9 4V2M12 4V2M15 4V2M9 22v-2M12 22v-2M15 22v-2M4 9H2M4 12H2M4 15H2M22 9h-2M22 12h-2M22 15h-2"/>
+              </svg>
+            </div>
+            <h4>Autonomous Flight Intelligence</h4>
+            <p>Onboard systems supporting waypoint navigation, sensor fusion and autonomous mission execution — reliable in GNSS-denied environments.</p>
+          </div>
+
+          <div class="swiper-slide why-card">
+            <span class="why-card-num">03</span>
+            <div class="why-card-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+              </svg>
+            </div>
+            <h4>Operational Versatility</h4>
+            <p>From loitering UAVs to long-endurance tactical systems — surveillance, reconnaissance and coordinated aerial response across all terrains.</p>
+          </div>
+
+          <div class="swiper-slide why-card">
+            <span class="why-card-num">04</span>
+            <div class="why-card-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.82m5.84-2.56a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.819m2.562-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+              </svg>
+            </div>
+            <h4>Rapid Deployment Capability</h4>
+            <p>Portable launch systems and VTOL configurations enable instant field deployment — establishing aerial superiority with minimal infrastructure.</p>
+          </div>
+
+        </div><!-- /swiper-wrapper -->
+      </div><!-- /why-swiper -->
+    </div><!-- /container -->
+
+    <!-- â”€â”€ Full-width dramatic photo strip â”€â”€ -->
+    <div class="why-photo-strip">
+      <img
+        src="assets/images/why-raksha-mantri.jpg"
+        alt="Artemon Aerospace â€” Defence Demo"
+        onerror="this.src='assets/images/hero-bg-fallback.jpg'">
+      <div class="why-strip-overlay">
+        <div class="container why-strip-content">
+          <blockquote class="why-quote">
+            "Dominance Doesn't Come<br>With Limitations."
+          </blockquote>
+          <p class="why-quote-sub">â€” Artemon Aerospace, India</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- /why -->
+
+
+  <!-- =========================================
+       KEY ACHIEVEMENTS
+       ========================================= -->
+  <section class="achieve" id="achievements">
+    <div class="container achieve-header">
+      <div class="achieve-header-left">
+        <div class="achieve-label">
+          <i class="fas fa-location-crosshairs"></i>
+          <span>Recognitions &amp; Milestones</span>
+        </div>
+        <h2 class="achieve-h2">Key Achievements</h2>
+        <p class="achieve-desc">Certified, recognised and trusted — Artemon Aerospace has earned the validation of India's top defence and industrial bodies through consistent innovation and execution.</p>
+      </div>
+      <div class="achieve-header-right" aria-hidden="true">
+        <img class="achieve-drone"
+             src="assets/images/teevra-drone.png"
+             alt="TEEVRA UAV"
+             onerror="this.style.opacity='0'">
+      </div>
+    </div>
+
+    <!-- Achievement highlight cards -->
+    <div class="container achieve-cards">
+
+      <div class="achieve-card">
+        <div class="achieve-card-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+          </svg>
+        </div>
+        <div class="achieve-card-body">
+          <div class="achieve-card-tag">Govt. of India</div>
+          <h4>DPIIT Approved</h4>
+          <p>Certified MSME in the UAV sector by the Department for Promotion of Industry and Internal Trade.</p>
+        </div>
+      </div>
+
+      <div class="achieve-card achieve-card--accent">
+        <div class="achieve-card-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/>
+          </svg>
+        </div>
+        <div class="achieve-card-body">
+          <div class="achieve-card-tag">iDEX Winner</div>
+          <h4 style="color: white;">IDEX Initiative</h4>
+          <p style="color: white;"> Winner of a prestigious R&amp;D challenge under Innovations for Defence Excellence — a testament to cutting-edge innovation.</p>
+        </div>
+      </div>
+
+      <div class="achieve-card">
+        <div class="achieve-card-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>
+          </svg>
+        </div>
+        <div class="achieve-card-body">
+          <div class="achieve-card-tag">Global Reach</div>
+          <h4>Export Potential</h4>
+          <p>Recognised as a potential exporter of indigenous next-generation UAS for marine, aviation, civil and government sectors.</p>
+        </div>
+      </div>
+
+      <div class="achieve-card">
+        <div class="achieve-card-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/>
+          </svg>
+        </div>
+        <div class="achieve-card-body">
+          <div class="achieve-card-tag">Proven Track</div>
+          <h4>7+ UAV Platforms</h4>
+          <p>Successfully developed and field-tested over seven distinct unmanned aerial platforms across tactical mission profiles.</p>
+        </div>
+      </div>
+
+    </div><!-- /achieve-cards -->
+
+    <!-- Photo mosaic -->
+    <div class="container achieve-mosaic-wrap">
+      <div class="achieve-mosaic">
+
+        <div class="am-cell am-cell-1">
+          <img src="assets/images/achievement-mou.jpg"
+               alt="Memorandum of Understanding"
+               onerror="this.src='assets/images/hero-bg-fallback.jpg'">
+        </div>
+
+        <div class="am-cell am-cell-2 am-dark">
+          <h4>IDEX INITIATIVE</h4>
+          <p>Winner of a prestigious R&amp;D challenge under Innovations for Defence Excellence.</p>
+        </div>
+
+        <div class="am-cell am-cell-3">
+          <img src="assets/images/achievement-event.jpg"
+               alt="Artemon Event"
+               onerror="this.src='assets/images/hero-bg-fallback.jpg'">
+        </div>
+
+        <div class="am-cell am-cell-4 am-light">
+          <h4>EXPORT<br>POTENTIAL</h4>
+          <p>Next-generation indigenous UAS for marine, aviation, civil and government sectors.</p>
+        </div>
+
+        <div class="am-cell am-cell-5">
+          <img src="assets/images/achievement-launcher-navy.jpg"
+               alt="Multi-Barrel Launcher Navy Expo"
+               onerror="this.style.opacity='0'">
+        </div>
+
+        <div class="am-cell am-cell-6">
+          <img src="assets/images/achievement-vice-admiral.jpg"
+               alt="Visit of Vice Admiral Navy Demo"
+               onerror="this.src='assets/images/why-raksha-mantri.jpg'">
+        </div>
+
+      </div>
+    </div><!-- /achieve-mosaic-wrap -->
+
+  </section>
+  <!-- /achievements -->
+
+
+  <!-- =========================================
+       CONTACT
+       ========================================= -->
+  <section class="contact" id="contact">
+    <div class="contact-bg-strip" aria-hidden="true"></div>
+
+    <div class="container contact-wrap">
+
+      <!-- LEFT: brand info + UAV -->
+      <div class="contact-left">
+
+        <div class="contact-eyebrow">
+          <i class="fas fa-location-crosshairs"></i>
+          <span>Get In Touch</span>
+        </div>
+        <h2 class="contact-h2">Partner With<br>Artemon Aerospace</h2>
+        <p class="contact-sub">Your Mission Starts Here. Reach out to discuss partnerships, procurement, demonstrations or joint development opportunities.</p>
+
+        <!-- Contact details -->
+        <div class="contact-details">
+          <a href="tel:+912066668330" class="contact-item">
+            <div class="contact-ico"><i class="fas fa-phone"></i></div>
+            <div class="contact-info">
+              <span class="contact-info-label">Phone</span>
+              <span class="contact-info-val">+91-20-66668330</span>
+            </div>
+          </a>
+          <a href="mailto:info@artemoninfra.com" class="contact-item">
+            <div class="contact-ico"><i class="fas fa-envelope"></i></div>
+            <div class="contact-info">
+              <span class="contact-info-label">Email</span>
+              <span class="contact-info-val">info@artemoninfra.com</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- UAV graphic -->
+        <div class="contact-img-wrap" aria-hidden="true">
+          <img src="assets/images/contact-uav.png"
+               alt="Artemon UAV System"
+               class="contact-uav-img"
+               onerror="this.src='assets/images/teevra-drone.png'">
+        </div>
+
+      </div><!-- /contact-left -->
+
+      <!-- RIGHT: form card -->
+      <div class="contact-right">
+        <div class="contact-form-card">
+
+          <div class="contact-form-header">
+            <h3 class="contact-form-title">Send Us a Message</h3>
+            <p class="contact-form-sub">We respond within 24 hours on business days.</p>
+          </div>
+
+          <form id="contactForm" novalidate>
+
+            <div class="cf-row cf-row--2">
+              <div class="cf-group">
+                <label class="cf-label" for="cf-name">Name</label>
+                <input id="cf-name" class="cf-input" type="text" name="name" placeholder="Full name" required>
+              </div>
+              <div class="cf-group">
+                <label class="cf-label" for="cf-email">Email</label>
+                <input id="cf-email" class="cf-input" type="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="cf-group">
+              <label class="cf-label" for="cf-subject">Subject</label>
+              <input id="cf-subject" class="cf-input" type="text" name="subject" placeholder="How can we help?" required>
+            </div>
+
+            <div class="cf-group">
+              <label class="cf-label" for="cf-message">Message</label>
+              <textarea id="cf-message" class="cf-input cf-textarea" name="message" placeholder="Tell us about your requirement..." required></textarea>
+            </div>
+
+            <!-- Honeypot -->
+            <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off">
+
+            <button type="submit" class="cf-submit" id="cfSubmit">
+              <span class="cf-btn-text">Send Message</span>
+              <svg class="cf-btn-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M10 3l7 7-7 7"/></svg>
+            </button>
+
+            <div class="cf-msg cf-success" id="cfSuccess">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="8"/><path d="M7 10l2 2 4-4"/></svg>
+              Message sent successfully. We'll be in touch soon.
+            </div>
+            <div class="cf-msg cf-error" id="cfError">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="8"/><path d="M10 6v4M10 14h.01"/></svg>
+              Something went wrong. Please try again.
+            </div>
+
+          </form>
+        </div>
+      </div><!-- /contact-right -->
+
+    </div>
+  </section>
+  <!-- /contact -->
+
+
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+  <footer class="site-footer" id="footer">
+
+    <!-- Main columns -->
+    <div class="container footer-main">
+
+      <!-- Col 1: Brand (never collapses) -->
+      <div class="footer-col footer-brand">
+        <a href="#home" class="footer-logo-link">
+          <img src="assets/images/logo-white.png"
+               alt="Artemon Aerospace"
+               class="footer-logo"
+               onerror="this.src='assets/images/logo-light.png'">
+        </a>
+        <p class="footer-tagline">Advancing India's indigenous<br>unmanned aerial dominance.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:info@artemoninfra.com" class="footer-social-btn" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Company -->
+      <div class="footer-col footer-accordion">
+        <button class="footer-col-title footer-acc-btn" aria-expanded="false">
+          Company
+          <svg class="footer-acc-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+        </button>
+        <div class="footer-acc-body">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Col 3: Our Inventory -->
+      <div class="footer-col footer-accordion">
+        <button class="footer-col-title footer-acc-btn" aria-expanded="false">
+          Our Inventory
+          <svg class="footer-acc-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+        </button>
+        <div class="footer-acc-body">
+          <ul class="footer-links">
+            <li><a href="#">RUDRA MK-I</a></li>
+            <li><a href="#">TEEVRA MK-I</a></li>
+            <li><a href="#">AAGHAT</a></li>
+            <li><a href="#">UMRAATS</a></li>
+            <li><a href="#">CCAV &mdash; Kamikaze</a></li>
+            <li><a href="#">Single Tube Launcher</a></li>
+            <li><a href="#">Multi-Barrel Launcher</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Col 4: Contact Info -->
+      <div class="footer-col footer-accordion">
+        <button class="footer-col-title footer-acc-btn" aria-expanded="false">
+          Contact
+          <svg class="footer-acc-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+        </button>
+        <div class="footer-acc-body">
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+91 96045 39990</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+91-20-66668330</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@artemoninfra.com">info@artemoninfra.com</a>
+            </li>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <span>Office 112, Amanora Apex Tower,<br>Hadapsar, Pune &mdash; 411028</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Col 5: Working Hours + Cert -->
+      <div class="footer-col footer-accordion">
+        <button class="footer-col-title footer-acc-btn" aria-expanded="false">
+          Office Hours
+          <svg class="footer-acc-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+        </button>
+        <div class="footer-acc-body">
+          <p class="footer-hours">
+            <span class="footer-hours-days">Monday &ndash; Saturday</span>
+            <span class="footer-hours-time">9:30 AM &ndash; 6:30 PM</span>
+          </p>
+          <div class="footer-cert">
+            <div class="footer-cert-ico">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <span>ISO 9001:2015 Certified</span>
+          </div>
+          <div class="footer-cert">
+            <div class="footer-cert-ico">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9l4-5 4 5M6 14l4-5 4 5"/></svg>
+            </div>
+            <span>DPIIT Approved MSME</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /footer-main -->
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 Artemon Aerospace. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visible brand wordmark below footer -->
+    <div class="footer-wordmark" aria-hidden="true">ARTEMON</div>
+
+  </footer>
+  <!-- /footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

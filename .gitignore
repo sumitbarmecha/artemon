@@ -1,0 +1,8 @@
+# WordPress media uploads — do not commit to GitHub
+uploads/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
