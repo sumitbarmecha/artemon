@@ -42,6 +42,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 0 28px;
 }
 
+/* Full-bleed shell for mobile Swipers (left-aligned with .container, open on the right) */
+.container-fluid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+@media (max-width: 768px) {
+  .container-fluid--swiper {
+    max-width: none;
+    padding-left: 28px;
+    padding-right: 0;
+  }
+}
+
 /* ============================================================
    HEADER â€” Dark defense-grade navigation
    Transparent over hero â†’ solid dark on scroll
@@ -1105,12 +1120,43 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     border-radius: 0;
     background: transparent;
   }
+  .why-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+  .why-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
   .why-card {
     border: 1px solid rgba(8,18,46,0.09);
     border-radius: 12px;
     padding: 24px 20px 28px;
+    width: 100%;
+    flex: 1;
+    height: auto;
+    box-sizing: border-box;
   }
   .why-h2 { font-size: 1.9rem; }
+
+  .trust-swiper {
+    overflow: visible;
+  }
+  .trust-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+  .trust-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .trust-item {
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+  }
 }
 
 /* ── Photo strip ── */

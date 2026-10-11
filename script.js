@@ -21,35 +21,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.getElementById('hamburger');
   const navList   = document.getElementById('navList');
 
-  hamburger.addEventListener('click', () => {
-    const open = hamburger.classList.toggle('open');
-    navList.classList.toggle('open', open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  });
-
-  navList.querySelectorAll('.nav-a:not(.drop-trigger)').forEach(a => {
-    a.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      navList.classList.remove('open');
-      document.body.style.overflow = '';
+  if (hamburger && navList) {
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      navList.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
     });
-  });
 
-  // Mobile accordion dropdown
-  navList.querySelectorAll('.drop-trigger').forEach(trigger => {
-    trigger.addEventListener('click', e => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        trigger.closest('.has-drop').classList.toggle('open');
-      }
+    navList.querySelectorAll('.nav-a:not(.drop-trigger)').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navList.classList.remove('open');
+        document.body.style.overflow = '';
+      });
     });
-  });
+
+    navList.querySelectorAll('.drop-trigger').forEach(trigger => {
+      trigger.addEventListener('click', e => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          trigger.closest('.has-drop').classList.toggle('open');
+        }
+      });
+    });
+  }
 
 
   /* ── Smooth scroll with header offset ── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      if (!href || href === '#') return;
+      const target = document.querySelector(href);
       if (!target) return;
       e.preventDefault();
       const headerH = parseInt(getComputedStyle(document.documentElement)
@@ -115,12 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function initTrustSwiper() {
     const isMobile = window.innerWidth <= 768;
-    if (isMobile && !trustSwiper) {
+    if (isMobile && !trustSwiper && document.querySelector('.trust-swiper')) {
       trustSwiper = new Swiper('.trust-swiper', {
         slidesPerView: 1.65,
         spaceBetween: 0,
         loop: true,
         speed: 700,
+        autoHeight: false,
+        slidesOffsetAfter: 28,
         autoplay: {
           delay: 2200,
           disableOnInteraction: false,
@@ -140,12 +145,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function initWhySwiper() {
     const isMobile = window.innerWidth <= 768;
-    if (isMobile && !whySwiper) {
+    if (isMobile && !whySwiper && document.querySelector('.why-swiper')) {
       whySwiper = new Swiper('.why-swiper', {
         slidesPerView: 1.12,
         spaceBetween: 14,
         loop: false,
         speed: 450,
+        autoHeight: false,
+        slidesOffsetAfter: 28,
         grabCursor: true,
         breakpoints: {
           480: { slidesPerView: 1.35, spaceBetween: 16 },
@@ -183,6 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.6 });
 
   document.querySelectorAll('.stat-num').forEach(el => countObserver.observe(el));
+
 
 });
 

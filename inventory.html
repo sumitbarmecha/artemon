@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Inventory — Artemon Aerospace</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="inventory.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-stripe"></div>
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/images/logo-white.png" alt="Artemon Aerospace" width="160" height="40"
+             onerror="this.src='assets/images/logo-light.png'">
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" role="navigation">
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html" class="nav-a">HOME</a></li>
+          <li><a href="career.html" class="nav-a">CAREER</a></li>
+          <li class="has-drop">
+            <a href="inventory.html" class="nav-a drop-trigger active">OUR INVENTORY <i class="fas fa-chevron-down"></i></a>
+            <ul class="drop-menu">
+              <li><a href="teevra.html">TEEVRA MK-I</a></li>
+              <li><a href="inventory.html#rudra">RUDRA MK-I</a></li>
+              <li><a href="inventory.html#single-tube">Single Tube Pneumatic Launcher</a></li>
+              <li><a href="inventory.html#multi-barrel">Multi-Barrel Pneumatic Launcher</a></li>
+              <li><a href="inventory.html#aaghat">AAGHAT | 50 KG Electric VTOL UAV</a></li>
+              <li><a href="inventory.html#umraats">UMRAATS</a></li>
+              <li><a href="inventory.html#ccav">CCAV — Kamikaze</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="nav-a nav-a--cta">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="inv-hero">
+    <div class="inv-hero-bg" aria-hidden="true"></div>
+    <div class="container inv-hero-body">
+      <div class="inv-hero-label">
+        <i class="fas fa-location-crosshairs"></i>
+        <span>Our Portfolios</span>
+      </div>
+      <h1 class="inv-hero-h1">Showcasing<br><em>Excellence</em></h1>
+      <p class="inv-hero-sub">Indigenous unmanned aerial platforms and launch systems engineered for modern defence, ISR and precision mission profiles.</p>
+      <div class="inv-hero-stats">
+        <div class="inv-stat"><strong>7+</strong><span>UAV Platforms</span></div>
+        <div class="inv-stat"><strong>2</strong><span>Launch Systems</span></div>
+        <div class="inv-stat"><strong>100%</strong><span>Indigenous Design</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalogue -->
+  <section class="inv-catalogue" id="catalogue">
+    <div class="container">
+
+      <div class="inv-toolbar">
+        <div class="inv-toolbar-left">
+          <div class="inv-sec-label">
+            <i class="fas fa-location-crosshairs"></i>
+            <span>Product Catalogue</span>
+          </div>
+          <h2 class="inv-sec-h2">Our Inventory</h2>
+        </div>
+        <div class="inv-filters" role="tablist" aria-label="Filter products">
+          <button type="button" class="inv-filter is-active" data-filter="all">All</button>
+          <button type="button" class="inv-filter" data-filter="loitering">Loitering UAV</button>
+          <button type="button" class="inv-filter" data-filter="launch">Launch System</button>
+          <button type="button" class="inv-filter" data-filter="vtol">VTOL UAV</button>
+          <button type="button" class="inv-filter" data-filter="tactical">Tactical UAS</button>
+          <button type="button" class="inv-filter" data-filter="combat">Combat UAV</button>
+        </div>
+      </div>
+
+      <div class="inv-list">
+
+        <article class="inv-row" id="teevra" data-type="loitering">
+          <div class="inv-row-media">
+            <span class="inv-row-num">01</span>
+            <img src="assets/images/inventory/teevra.png" alt="TEEVRA MK-I Loitering UAV">
+          </div>
+          <div class="inv-row-body">
+            <div class="inv-row-type">Loitering UAV</div>
+            <h3 class="inv-row-title">TEEVRA MK-I</h3>
+            <p class="inv-row-spec">5 KG AUW Loitering UAV</p>
+            <p class="inv-row-desc">Lightweight loitering UAV designed for rapid deployment and precision targeting. Enables silent operations, real-time situational awareness and flexible launch across multiple operational environments.</p>
+            <div class="inv-row-foot">
+              <div class="inv-row-meta">
+                <div><span>Capability</span><strong>Tactical Surveillance &amp; Precision Engagement</strong></div>
+                <div><span>Type</span><strong>Loitering UAV</strong></div>
+              </div>
+              <a href="teevra.html" class="inv-row-cta">View Details <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h14M10 3l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="inv-row" id="rudra" data-type="loitering">
+          <div class="inv-row-media">
+            <span class="inv-row-num">02</span>
+            <img src="assets/images/inventory/rudra.png" alt="RUDRA MK-I Loitering UAV">
+          </div>
+          <div class="inv-row-body">
+            <div class="inv-row-type">Loitering UAV</div>
+            <h3 class="inv-row-title">RUDRA MK-I</h3>
+            <p class="inv-row-spec">25 KG AUW Loitering UAV</p>
+            <p class="inv-row-desc">High-endurance loitering system engineered for extended-range missions with enhanced payload capacity, advanced guidance and reliable deployment across ground and maritime environments.</p>
+            <div class="inv-row-foot">
+              <div class="inv-row-meta">
+                <div><span>Capability</span><strong>Extended Tactical Operations</strong></div>
+                <div><span>Type</span><strong>Loitering UAV</strong></div>
+              </div>
+              <a href="contact.html" class="inv-row-cta">Enquire Now <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h14M10 3l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="inv-row" id="single-tube" data-type="launch">
+          <div class="inv-row-media">
+            <span class="inv-row-num">03</span>
+            <img src="assets/images/inventory/single-tube-launcher.png" alt="Single Tube Pneumatic Launcher">
+          </div>
+          <div class="inv-row-body">
+            <div class="inv-row-type">Launch System</div>
+            <h3 class="inv-row-title">Single Tube Pneumatic Launcher</h3>
+            <p class="inv-row-spec">Compact Tactical Launch System</p>
+            <p class="inv-row-desc">Compact launch system enabling controlled, low-signature deployment of loitering UAVs. Designed for rapid setup and seamless integration with mobile tactical units.</p>
+            <div class="inv-row-foot">
+              <div class="inv-row-meta">
+                <div><span>Capability</span><strong>Rapid UAV Deployment</strong></div>
+                <div><span>Type</span><strong>Launch System</strong></div>
+              </div>
+              <a href="contact.html" class="inv-row-cta">Enquire Now <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h14M10 3l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="inv-row" id="multi-barrel" data-type="launch">
+          <div class="inv-row-media">
+            <span class="inv-row-num">04</span>
+            <img src="assets/images/inventory/multi-barrel-launcher.png" alt="Multi-Barrel Pneumatic Launcher">
+          </div>
+          <div class="inv-row-body">
+            <div class="inv-row-type">Launch System</div>
+            <h3 class="inv-row-title">Multi-Barrel Pneumatic Launcher</h3>
+            <p class="inv-row-spec">High-Capacity Swarm Launcher</p>
+            <p class="inv-row-desc">High-capacity launcher supporting sequential and swarm deployment of multiple UAVs. Built for fast-response missions and scalable tactical operations.</p>
+            <div class="inv-row-foot">
+              <div class="inv-row-meta">
+                <div><span>Capability</span><strong>Swarm &amp; Saturation Deployment</strong></div>
+                <div><span>Type</span><strong>Launch System</strong></div>
+              </div>
+              <a href="contact.html" class="inv-row-cta">Enquire Now <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h14M10 3l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="inv-row" id="aaghat" data-type="vtol">
+          <div class="inv-row-media">
+            <span class="inv-row-num">05</span>
+            <img src="assets/images/inventory/aaghat.png" alt="AAGHAT 50 KG E-VTOL UAV">
+          </div>
+          <div class="inv-row-body">
+            <div class="inv-row-type">VTOL UAV</div>
+            <h3 class="inv-row-title">AAGHAT</h3>
+            <p class="inv-row-spec">50 KG E-VTOL UAV</p>
+            <p class="inv-row-desc">Multi-role VTOL platform combining vertical lift with fixed-wing efficiency. Designed for ISR missions with long endurance and operations in constrained environments.</p>
+            <div class="inv-row-foot">
+              <div class="inv-row-meta">
+                <div><span>Capability</span><strong>ISR &amp; Tactical Support</strong></div>
+                <div><span>Type</span><strong>VTOL UAV</strong></div>
+              </div>
+              <a href="contact.html" class="inv-row-cta">Enquire Now <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h14M10 3l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="inv-row" id="umraats" data-type="tactical">
+          <div class="inv-row-media">
+            <span class="inv-row-num">06</span>
+            <img src="assets/images/inventory/umraats.png" alt="UMRAATS Autonomous Tactical UAS">
+          </div>
+          <div class="inv-row-body">
+            <div class="inv-row-type">Tactical UAS</div>
+            <h3 class="inv-row-title">UMRAATS</h3>
+            <p class="inv-row-spec">Autonomous Tactical UAS</p>
+            <p class="inv-row-desc">Long-endurance fixed-wing system engineered for ISR and strategic missions. Supports multi-payload integration and autonomous operations across large operational areas.</p>
+            <div class="inv-row-foot">
+              <div class="inv-row-meta">
+                <div><span>Capability</span><strong>Long-Endurance ISR</strong></div>
+                <div><span>Type</span><strong>Tactical UAS</strong></div>
+              </div>
+              <a href="contact.html" class="inv-row-cta">Enquire Now <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h14M10 3l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="inv-row" id="ccav" data-type="combat">
+          <div class="inv-row-media">
+            <span class="inv-row-num">07</span>
+            <img src="assets/images/inventory/ccav-kamikaze.png" alt="CCAV Kamikaze Collaborative Combat Air Vehicle">
+          </div>
+          <div class="inv-row-body">
+            <div class="inv-row-type">Combat UAV</div>
+            <h3 class="inv-row-title">CCAV — Kamikaze</h3>
+            <p class="inv-row-spec">Collaborative Combat Air Vehicle</p>
+            <p class="inv-row-desc">Autonomous, non-recoverable combat platform designed for high-speed precision strike missions. Supports manned-unmanned teaming and maritime deployment.</p>
+            <div class="inv-row-foot">
+              <div class="inv-row-meta">
+                <div><span>Capability</span><strong>Precision Strike &amp; Teaming</strong></div>
+                <div><span>Type</span><strong>Combat UAV</strong></div>
+              </div>
+              <a href="contact.html" class="inv-row-cta">Enquire Now <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h14M10 3l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="inv-cta">
+    <div class="container inv-cta-inner">
+      <div>
+        <h2>Need a mission-specific configuration?</h2>
+        <p>Partner with Artemon Aerospace for demonstrations, procurement and joint development of indigenous UAV systems.</p>
+      </div>
+      <a href="contact.html" class="inv-cta-btn">
+        Contact Our Team
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h14M10 3l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer-main">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo-link">
+          <img src="assets/images/logo-white.png" alt="Artemon Aerospace" class="footer-logo"
+               onerror="this.src='assets/images/logo-light.png'">
+        </a>
+        <p class="footer-tagline">Advancing India's indigenous<br>unmanned aerial dominance.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:info@artemoninfra.com" class="footer-social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col footer-accordion">
+        <button class="footer-col-title footer-acc-btn" aria-expanded="false">Company <svg class="footer-acc-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></button>
+        <div class="footer-acc-body"><ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="inventory.html">Our Inventory</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-col footer-accordion">
+        <button class="footer-col-title footer-acc-btn" aria-expanded="false">Our Inventory <svg class="footer-acc-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></button>
+        <div class="footer-acc-body"><ul class="footer-links">
+          <li><a href="inventory.html#rudra">RUDRA MK-I</a></li>
+          <li><a href="teevra.html">TEEVRA MK-I</a></li>
+          <li><a href="inventory.html#aaghat">AAGHAT</a></li>
+          <li><a href="inventory.html#umraats">UMRAATS</a></li>
+          <li><a href="inventory.html#ccav">CCAV &mdash; Kamikaze</a></li>
+          <li><a href="inventory.html#single-tube">Single Tube Launcher</a></li>
+          <li><a href="inventory.html#multi-barrel">Multi-Barrel Launcher</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-col footer-accordion">
+        <button class="footer-col-title footer-acc-btn" aria-expanded="false">Contact <svg class="footer-acc-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></button>
+        <div class="footer-acc-body"><ul class="footer-contact-list">
+          <li><i class="fas fa-phone"></i><span>+91 96045 39990</span></li>
+          <li><i class="fas fa-phone"></i><span>+91-20-66668330</span></li>
+          <li><i class="fas fa-envelope"></i><a href="mailto:info@artemoninfra.com">info@artemoninfra.com</a></li>
+          <li><i class="fas fa-location-dot"></i><span>Office 112, Amanora Apex Tower, Hadapsar, Pune &mdash; 411028</span></li>
+        </ul></div>
+      </div>
+      <div class="footer-col footer-accordion">
+        <button class="footer-col-title footer-acc-btn" aria-expanded="false">Office Hours <svg class="footer-acc-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></button>
+        <div class="footer-acc-body">
+          <p class="footer-hours"><span class="footer-hours-days">Monday &ndash; Saturday</span><span class="footer-hours-time">9:30 AM &ndash; 6:30 PM</span></p>
+          <div class="footer-cert"><div class="footer-cert-ico"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div><span>ISO 9001:2015 Certified</span></div>
+          <div class="footer-cert"><div class="footer-cert-ico"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9l4-5 4 5M6 14l4-5 4 5"/></svg></div><span>DPIIT Approved MSME</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 Artemon Aerospace. All rights reserved.</p>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+    <div class="footer-wordmark" aria-hidden="true">ARTEMON AEROSPACE</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      const filters = document.querySelectorAll('.inv-filter');
+      const cards   = document.querySelectorAll('.inv-row');
+
+      filters.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filters.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          const key = btn.dataset.filter;
+          cards.forEach(card => {
+            const show = key === 'all' || card.dataset.type === key;
+            card.classList.toggle('is-hidden', !show);
+          });
+        });
+      });
+
+      // Smooth scroll to hash product on load
+      if (location.hash) {
+        const el = document.querySelector(location.hash);
+        if (el) {
+          setTimeout(() => {
+            const headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 78;
+            window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - headerH - 16, behavior: 'smooth' });
+            el.classList.add('is-highlight');
+            setTimeout(() => el.classList.remove('is-highlight'), 1600);
+          }, 120);
+        }
+      }
+    })();
+  </script>
+
+</body>
+</html>
